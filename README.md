@@ -6,7 +6,7 @@ Software developer building production ML systems — seeking Machine Learning /
 📧 meiringdean2409@gmail.com
 🔗 [LinkedIn](https://linkedin.com/in/deanmeiring) · [GitHub](https://github.com/DeanMeiring)
 
-Full CV: [`cv/Dean_Meiring_CV_ML_AI.pdf`](cv/Dean_Meiring_CV_ML_AI.pdf) (also mirrored as text in [`cv/CV.md`](cv/CV.md))
+Full CV: [`cv/Dean_Meiring_CV_ML_AI.pdf`](cv/Dean_Meiring_CV_ML_AI.pdf) 
 
 ## About
 
