@@ -14,6 +14,13 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 
 ## Key Projects
 
+### Learned Feature Vocabularies for ML (VQ-VAE) — Research in Progress
+- Solo, ongoing research: testing whether short discrete codes ("words") from a shared, frozen VQ-VAE vocabulary can stand in for raw data across models and tasks. 20+ experiments (PyTorch, LightGBM, scikit-learn) on Telco churn, Fashion-MNIST, PEMS-BAY road traffic and Telecom Italia.
+- Images compressed to 8–49 bytes, up to 10.8x smaller than zipped pixels; learned words beat raw pixels by about 4 points at 50 labels.
+- Every pass/fail bar fixed before running and judged by 95% confidence intervals; negative results reported (words lost to raw data on telecom next-hour forecasting, about 2x the error).
+- Hash-verified SQLite feature library, and Claude tested as a reader of the vocabulary (78.6%, answers grounded in word cards).
+- Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
+
 ### Real-Time Crypto Arbitrage & ML Price-Prediction Platform
 - Live trading-signal system combining triangular and cross-exchange arbitrage detection (Binance and Crypto.com APIs, WebSocket + REST) with per-asset XGBoost classifiers predicting short-term price direction, retrained daily on a rolling window of live market data.
 - Iterating on an XGBoost price-direction model across 8 assets (130K+ candles each); investigating alternative feature sets and prediction horizons after a chance-level baseline.

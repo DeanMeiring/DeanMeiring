@@ -12,6 +12,15 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 
 ## Key Projects
 
+### Learned Feature Vocabularies for ML (VQ-VAE) — Research in Progress
+
+- Testing whether short discrete codes ("words") from a shared, frozen VQ-VAE vocabulary can stand in for raw data across models and tasks. Solo, ongoing project: 20+ experiments (PyTorch, LightGBM, scikit-learn) on Telco churn, Fashion-MNIST, PEMS-BAY road traffic (325 sensors) and Telecom Italia (10,000 grid squares).
+- Compressed images to 8–49 bytes, up to 10.8x smaller than zipped pixels; the learned words beat raw pixels by about 4 points at 50 labels, and self-contained set words reached 70% word purity (up from 17% for grid words).
+- Fixed each pass/fail bar before running and judged results by 95% confidence intervals (block-resampled for spatial data). Reported negative results as they came: words lost to raw data on telecom next-hour forecasting (about 2x the error), and a graph-network traffic experiment gained 3.5% from neighbours against a 5% bar.
+- Built a versioned, hash-verified SQLite feature library (frozen dictionaries, messages, per-word "cards"); a class is recovered from cards alone at 76.7% accuracy. Tested Claude as a reader of the vocabulary (78.6%, all answers grounded) and found its answers came from the cards, so parked a custom reader.
+- Found that retraining on a second machine gives a slightly different dictionary (60.2% vs 61.3% at 50 labels), so a dictionary is only reusable as a copied, hashed file. Working under a self-imposed 30% compute cap on CPU-only laptops.
+- Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
+
 ### Real-Time Crypto Arbitrage & ML Price-Prediction Platform
 
 - Designed and deployed a live trading-signal system combining triangular and cross-exchange arbitrage detection (Binance and Crypto.com APIs, WebSocket + REST) with per-asset XGBoost classifiers predicting short-term price direction, retrained daily on a rolling window of live market data.
@@ -31,7 +40,7 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 
 ## Technical Skills
 
-- **Machine Learning & Data:** pandas, NumPy, scikit-learn, XGBoost, feature engineering, model evaluation (AUC, accuracy, train/test methodology)
+- **Machine Learning & Data:** pandas, NumPy, scikit-learn, XGBoost, feature engineering, model evaluation (AUC, accuracy, train/test methodology), PyTorch, LightGBM, VQ-VAE, graph neural networks, bootstrap confidence intervals
 - **Languages:** Python, SQL, JavaScript, TypeScript, Java, shell/scripting
 - **APIs & Integration:** REST & WebSocket APIs (Binance, Crypto.com), Google Gemini (LLM/vision), Telegram Bot API
 - **Backend & Infra:** FastAPI, asyncio, Git, Railway deployment, Agile methodologies, UAT/testing
