@@ -15,10 +15,12 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 ## Key Projects
 
 ### Learned Feature Vocabularies for ML (VQ-VAE) — Research in Progress
-- Solo, ongoing research: testing whether short discrete codes ("words") from a shared, frozen VQ-VAE vocabulary can stand in for raw data across models and tasks. 20+ experiments (PyTorch, LightGBM, scikit-learn) on Telco churn, Fashion-MNIST, PEMS-BAY road traffic and Telecom Italia.
+- Solo, ongoing research: can short discrete "words" from a shared, frozen vocabulary give ML models reusable context instead of hand-engineered features? 30+ pre-registered experiments (PyTorch, LightGBM, scikit-learn) on Telco churn, Fashion-MNIST, PEMS-BAY road traffic and Telecom Italia (10,000 Milan grid squares).
+- First positive real-data result: 16 learned "profile words" per grid square, built once from two weeks of raw history and reused across 4 forecasting tasks, improved a model that already had the raw data (next-day error −6%, all four tasks significant). A simple hand-built feature still did better, by 3–8%.
+- Diagnosed why earlier versions failed: an audit traced the loss to the encoder rather than the vocabulary, and equal-bytes controls showed exact recent values beat learned summaries on short-range forecasting.
+- Every pass/fail bar committed to git before running and judged by 95% confidence intervals (block-resampled for spatial data); negative results reported as they came.
 - Images compressed to 8–49 bytes, up to 10.8x smaller than zipped pixels; learned words beat raw pixels by about 4 points at 50 labels.
-- Every pass/fail bar fixed before running and judged by 95% confidence intervals; negative results reported (words lost to raw data on telecom next-hour forecasting, about 2x the error).
-- Hash-verified SQLite feature library, and Claude tested as a reader of the vocabulary (78.6%, answers grounded in word cards).
+- Hash-verified SQLite feature library, and Claude tested as a reader of the vocabulary (78.6%, answers grounded in word cards); its answers came from the cards, so a custom reader was parked.
 - Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
 
 ### Real-Time Crypto Arbitrage & ML Price-Prediction Platform
