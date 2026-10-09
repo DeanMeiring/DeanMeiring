@@ -14,9 +14,11 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 
 ### Learned Feature Vocabularies for ML (VQ-VAE) — Research in Progress
 
-- Testing whether short discrete codes ("words") from a shared, frozen VQ-VAE vocabulary can stand in for raw data across models and tasks. Solo, ongoing project: 20+ experiments (PyTorch, LightGBM, scikit-learn) on Telco churn, Fashion-MNIST, PEMS-BAY road traffic (325 sensors) and Telecom Italia (10,000 grid squares).
+- Testing whether short discrete "words" from a shared, frozen vocabulary can give ML models reusable context instead of hand-engineered features. Solo, ongoing project: 30+ pre-registered experiments (PyTorch, LightGBM, scikit-learn) on Telco churn, Fashion-MNIST, PEMS-BAY road traffic (325 sensors) and Telecom Italia (10,000 grid squares).
+- First positive real-data result: 16 learned "profile words" per Milan grid square, built once from two weeks of raw history and reused across 4 forecasting tasks, improved a model that already had the raw data (next-day error −6%, next-hour −0.9%, all four significant). A simple hand-built feature (each square's typical value for that hour) still did better, by 3–8%, which sets the next test.
+- Diagnosed why earlier versions failed: words built from the model's own 24-hour input added nothing; an audit traced the loss to the encoder's squeeze rather than the vocabulary; and equal-bytes controls showed exact recent values beat learned summaries on short-range forecasting. Stabilised residual-quantization training (a health gate, then removing a dead-code "revive" step found to trigger the breakdown).
 - Compressed images to 8–49 bytes, up to 10.8x smaller than zipped pixels; the learned words beat raw pixels by about 4 points at 50 labels, and self-contained set words reached 70% word purity (up from 17% for grid words).
-- Fixed each pass/fail bar before running and judged results by 95% confidence intervals (block-resampled for spatial data). Reported negative results as they came: words lost to raw data on telecom next-hour forecasting (about 2x the error), and a graph-network traffic experiment gained 3.5% from neighbours against a 5% bar.
+- Fixed each pass/fail bar in git before running and judged results by 95% confidence intervals (block-resampled for spatial data). Reported negative results as they came, including a clear fail of the project's own telecom bar and a graph-network traffic experiment that gained 3.5% from neighbours against a 5% bar.
 - Built a versioned, hash-verified SQLite feature library (frozen dictionaries, messages, per-word "cards"); a class is recovered from cards alone at 76.7% accuracy. Tested Claude as a reader of the vocabulary (78.6%, all answers grounded) and found its answers came from the cards, so parked a custom reader.
 - Found that retraining on a second machine gives a slightly different dictionary (60.2% vs 61.3% at 50 labels), so a dictionary is only reusable as a copied, hashed file. Working under a self-imposed 30% compute cap on CPU-only laptops.
 - Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
@@ -40,7 +42,7 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 
 ## Technical Skills
 
-- **Machine Learning & Data:** pandas, NumPy, scikit-learn, XGBoost, feature engineering, model evaluation (AUC, accuracy, train/test methodology), PyTorch, LightGBM, VQ-VAE, graph neural networks, bootstrap confidence intervals
+- **Machine Learning & Data:** pandas, NumPy, scikit-learn, XGBoost, feature engineering, model evaluation (AUC, accuracy, train/test methodology), PyTorch, LightGBM, VQ-VAE, residual quantization, graph neural networks, bootstrap confidence intervals, pre-registered evaluation
 - **Languages:** Python, SQL, JavaScript, TypeScript, Java, shell/scripting
 - **APIs & Integration:** REST & WebSocket APIs (Binance, Crypto.com), Google Gemini (LLM/vision), Telegram Bot API
 - **Backend & Infra:** FastAPI, asyncio, Git, Railway deployment, Agile methodologies, UAT/testing
