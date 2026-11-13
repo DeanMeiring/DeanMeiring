@@ -1,16 +1,16 @@
 # Dean Meiring
 
-Software developer building production ML systems — seeking Machine Learning / AI Engineering roles.
+Data & BI Developer · SQL · Python · Automation · Machine Learning — working toward data engineering and ML/AI engineering roles.
 
 📍 Somerset West, Cape Town, South Africa
 📧 meiringdean2409@gmail.com
 🔗 [LinkedIn](https://linkedin.com/in/deanmeiring) · [GitHub](https://github.com/DeanMeiring)
 
-Full CV: [`cv/Dean_Meiring_CV_ML_AI.pdf`](cv/Dean_Meiring_CV_ML_AI.pdf) 
+Full CV: [`cv/Dean_Meiring_CV.pdf`](cv/Dean_Meiring_CV.pdf) · text version: [`cv/CV.md`](cv/CV.md)
 
 ## About
 
-Final-year Computer Science student (Belgium Campus, BI specialisation) who ships working ML systems, not just coursework — including a real-time crypto arbitrage and price-prediction platform running live on production infrastructure, with hands-on experience integrating exchange and LLM/vision APIs. Comfortable across Python, SQL, and JavaScript/TypeScript, with experience building, deploying, and debugging live ML pipelines. Currently in a BI/Application Specialist role applying automation and data skills day-to-day, while moving toward a machine learning or data engineering role with end-to-end ownership.
+Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) who builds and runs real data systems, not just coursework. I work daily in SQL, Python and BI tooling as an Application Specialist, and have deployed a live ML trading-signal platform and run a 30+ experiment ML research project. I enjoy turning messy data into decisions, I'm passionate about fintech, and I'm looking for a role where I can own problems end to end.
 
 ## Key Projects
 
@@ -33,29 +33,34 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 ### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline
 - XGBoost classifiers predicting Mediterranean fruit fly outbreak risk across the Western Cape (South Africa) and California, each calibrated to local climate, trap-catch, and crop-cycle data.
 - Feature sets: cumulative degree-days, rainfall spikes, historical trap counts, host-crop harvest schedules, microclimate and quarantine-boundary features.
-- Achieved meaningfully better-than-chance classification performance, sourced via data access negotiated with international research bodies.
+- Sourced and negotiated data access with international research bodies and industry contacts.
 - Code: [github.com/DeanMeiring/Dean-Projects](https://github.com/DeanMeiring/Dean-Projects)
 
 ## Technical Skills
 
-- **Machine Learning & Data:** pandas, NumPy, scikit-learn, XGBoost, feature engineering, model evaluation (AUC, accuracy, train/test methodology)
+- **Machine Learning & Data:** pandas, NumPy, scikit-learn, XGBoost, LightGBM, PyTorch, feature engineering, model evaluation, confidence intervals
 - **Languages:** Python, SQL, JavaScript, TypeScript, Java, shell/scripting
 - **APIs & Integration:** REST & WebSocket APIs (Binance, Crypto.com), Google Gemini (LLM/vision), Telegram Bot API
-- **Backend & Infra:** FastAPI, asyncio, Git, Railway deployment, Agile methodologies, UAT/testing
+- **Backend & Infra:** FastAPI, asyncio, Git, Railway deployment
+- **Ways of working:** Agile, User Acceptance Testing, requirements gathering
 - **Databases:** PostgreSQL, TimescaleDB, SQLite
 - **BI & Analytics:** Power BI, Tableau, Microsoft Excel
 
 ## Experience
 
 - **Application Specialist (AIT Intern)**, Online Intelligence — *Jan 2026 – Present*
-- **Co-Founder & Data Analyst**, MEIDEAN Trading (Family Business) — *Mar 2025 – Jan 2026*
+- **Co-Founder & Data Analyst**, MEIDEAN Trading (Family Business) — *Mar 2025 – Dec 2025*
+- **Founder & Software Developer**, LPSolutions — *Oct 2023 – Dec 2024*
 - **Software Engineering Intern (Job Shadowing)**, Pragma — *Dec 2024*
 - **IT Support (Part-Time)**, Small Start-Up — *2022*
 
 ## Education
 
-**BSc Computer Science**, Belgium Campus iTversity (NQF Level 8) — *Expected 2026*
-Specialisation: Business Intelligence (BI)
+**Bachelor of Computing (NQF Level 8), Data Science specialisation**, Belgium Campus iTversity — *Expected 2026*
+
+- 4-year degree: 3 academic years plus a workplace year (internship and dissertation, in progress)
+- Academic years: weighted average **65.6%** · 38 subjects passed, none failed
+- Top results: Business Intelligence 84% · Innovation Management 82% · Project Management 80% · Capstone Project 76% · Database Administration 75%
 
 ## Leadership & Extracurricular
 
