@@ -1,6 +1,6 @@
 # Dean Meiring
 
-*Software Developer building production ML systems — seeking Machine Learning / AI Engineering roles*
+*Data & BI Developer · SQL · Python · Automation · Machine Learning*
 
 meiringdean2409@gmail.com | Somerset West, Cape Town, South Africa | [linkedin.com/in/deanmeiring](https://linkedin.com/in/deanmeiring) | [github.com/DeanMeiring](https://github.com/DeanMeiring)
 
@@ -8,7 +8,7 @@ meiringdean2409@gmail.com | Somerset West, Cape Town, South Africa | [linkedin.c
 
 ## Professional Summary
 
-Final-year Computer Science student (Belgium Campus, BI specialisation) who ships working ML systems, not just coursework: a real-time crypto arbitrage and price-prediction platform running live on production infrastructure, with hands-on experience integrating exchange and LLM/vision APIs. Comfortable across Python, SQL, and JavaScript/TypeScript, with hands-on experience building, deploying, and debugging live ML pipelines. Currently in a BI/Application Specialist role applying automation and data skills day-to-day, while actively moving toward a machine learning or data engineering role where I own systems end-to-end rather than support them.
+Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) who builds and runs real data systems, not just coursework. I work daily in SQL, Python and BI tooling as an Application Specialist, and have deployed a live ML trading-signal platform and run a 30+ experiment ML research project. I enjoy turning messy data into decisions, I'm passionate about fintech, and I'm looking for a role where I can own problems end to end. Open to relocating to the UK, UAE, Poland, Portugal or Spain.
 
 ## Key Projects
 
@@ -36,8 +36,7 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 
 - Built and evaluated XGBoost classifiers predicting Mediterranean fruit fly outbreak risk across two regions — the Western Cape (South Africa) and California — each calibrated to local climate, trap-catch, and crop-cycle data.
 - Feature sets included cumulative degree-days, rainfall spikes, historical trap counts, host-crop harvest schedules, and proximity to known infestation hot spots (Western Cape), plus microclimate and quarantine-boundary features (California).
-- Achieved meaningfully better-than-chance classification performance — a clear contrast to the chance-level (AUC ≈ 0.50) result found in the crypto price-direction model above, and a useful data point on which feature domains actually carry predictive signal.
-- Identified and closed a genuine research gap by combining region-specific pest biology, chill-portion phenology modelling, and ensemble ML — sourced and negotiated data access with international research bodies and industry contacts.
+- Sourced and negotiated data access with international research bodies and industry contacts.
 - Code: [github.com/DeanMeiring/Dean-Projects](https://github.com/DeanMeiring/Dean-Projects)
 
 ## Technical Skills
@@ -45,7 +44,8 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 - **Machine Learning & Data:** pandas, NumPy, scikit-learn, XGBoost, feature engineering, model evaluation (AUC, accuracy, train/test methodology), PyTorch, LightGBM, VQ-VAE, residual quantization, graph neural networks, bootstrap confidence intervals, pre-registered evaluation
 - **Languages:** Python, SQL, JavaScript, TypeScript, Java, shell/scripting
 - **APIs & Integration:** REST & WebSocket APIs (Binance, Crypto.com), Google Gemini (LLM/vision), Telegram Bot API
-- **Backend & Infra:** FastAPI, asyncio, Git, Railway deployment, Agile methodologies, UAT/testing
+- **Backend & Infra:** FastAPI, asyncio, REST & WebSocket APIs, Git, Railway deployment
+- **Ways of working:** Agile, User Acceptance Testing, requirements gathering
 - **Databases:** PostgreSQL, TimescaleDB, SQLite — relational and time-series data design
 - **BI & Analytics:** Power BI, Tableau, Microsoft Excel — dashboards and reporting pipelines
 
@@ -54,16 +54,21 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 ### Application Specialist (AIT Intern) | Online Intelligence
 *Jan 2026 – Present*
 
-- Write SQL queries and custom automation scripts to streamline raw data workflows on the CiiMS platform for the Thompsons Security Group account, with secondary support for Clicks and EBS Security.
-- Own end-to-end User Acceptance Testing (UAT) for platform releases, translating client requirements into structured test coverage.
-- Work directly with the Regional Manager on platform configuration and client-facing reporting, building fluency in enterprise BI tooling (Business Link, RAPs).
+- Write SQL queries and automation scripts that replace manual data handling on the CiiMS platform for Thompsons Security Group, with support for Clicks and EBS Security.
+- Own end-to-end User Acceptance Testing for platform releases, turning client requirements into structured test coverage.
+- Work with the Regional Manager on platform configuration and client reporting in enterprise BI tooling.
 
 ### Co-Founder & Data Analyst | MEIDEAN Trading (Family Business)
-*Mar 2025 – Jan 2026*
+*Mar 2025 – Dec 2025*
 
-- Built custom software to automate operations and streamline business processes, beyond core sales activity.
-- Delivered part-time data analysis projects for external clients, including a completed engagement with the Lipstar Group and ongoing work for Lancewood.
-- Stepped back from day-to-day involvement in January 2026 to begin the AIT internship.
+- Built custom software that automated day-to-day operations and business processes.
+- Delivered data analysis projects for external clients, including the Lipstar Group and Lancewood.
+
+### Founder & Software Developer | LPSolutions
+*Oct 2023 – Dec 2024*
+
+- Ran my own software business, building custom applications for clients end to end, from requirements to delivery.
+- Built an application for a construction company client.
 
 ### Software Engineering Intern (Job Shadowing) | Pragma
 *Dec 2024*
@@ -77,11 +82,13 @@ Final-year Computer Science student (Belgium Campus, BI specialisation) who ship
 
 ## Education
 
-**Belgium Campus iTversity (NQF Level 8) — BSc Computer Science**
+**Belgium Campus iTversity — Bachelor of Computing (NQF Level 8), Data Science specialisation**
 *Expected 2026*
 
-- Specialisation: Business Intelligence (BI)
-- Relevant coursework: Data Structures, Database Management, Data Analytics, Software Engineering
+- 4-year degree: 3 academic years plus a workplace year (internship and dissertation, in progress)
+- Academic years: weighted average **65.6%** · 38 subjects passed, none failed
+- Top results: Business Intelligence 84% · Innovation Management 82% · Project Management 80% · Capstone Project 76% · Database Administration 75%
+- Relevant modules: Machine Learning, Statistics (3 years), Data Warehousing, Database Development, Linear Programming, Programming
 
 ## Leadership & Extracurricular
 
