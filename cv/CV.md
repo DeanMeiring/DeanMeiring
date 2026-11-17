@@ -8,7 +8,7 @@ meiringdean2409@gmail.com | Somerset West, Cape Town, South Africa | [linkedin.c
 
 ## Professional Summary
 
-Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) who builds and runs real data systems, not just coursework. I work daily in SQL, Python and BI tooling as an Application Specialist, and have deployed a live ML trading-signal platform and run a 30+ experiment ML research project. I enjoy turning messy data into decisions, I'm passionate about fintech, and I'm looking for a role where I can own problems end to end. Open to relocating to the UK, UAE, Poland, Portugal or Spain.
+Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) who builds and runs real data systems, not just coursework. I work daily in SQL, Python and BI tooling as an Application Specialist, and have deployed a live ML trading-signal platform and run a 30+ experiment ML research project. I'm looking for a data, BI or ML role where I can own problems end to end.
 
 ## Key Projects
 
@@ -23,6 +23,12 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 - Found that retraining on a second machine gives a slightly different dictionary (60.2% vs 61.3% at 50 labels), so a dictionary is only reusable as a copied, hashed file. Working under a self-imposed 30% compute cap on CPU-only laptops.
 - Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
 
+### Offline Document Q&A System — Project Outline (private repository)
+
+- Building a fully local question-answering system over PDF manuals. The retrieval pipeline is built: PDF parsing into sections that keep printed-page citations, local embeddings (768 numbers per section) in a vector database, a custom BM25 keyword search, and reciprocal rank fusion to merge the two result lists.
+- Designed for privacy: everything runs on one machine with no cloud APIs, and network code is limited to localhost, enforced by automated tests.
+- Built a test harness to compare search settings before changing them. Answer generation with a local LLM is in progress.
+
 ### Real-Time Crypto Arbitrage & ML Price-Prediction Platform
 
 - Designed and deployed a live trading-signal system combining triangular and cross-exchange arbitrage detection (Binance and Crypto.com APIs, WebSocket + REST) with per-asset XGBoost classifiers predicting short-term price direction, retrained daily on a rolling window of live market data.
@@ -32,11 +38,12 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 - Integrated a Telegram bot for real-time alerts and command-driven reporting, alongside a live analytics dashboard (FastAPI, PostgreSQL, Chart.js).
 - Deployed and continuously operate the system on Railway, managing scheduled retraining, database schema migrations, and safe redeploys of a stateful, always-on service.
 
-### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline
+### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline (Research in Progress)
 
 - Built and evaluated XGBoost classifiers predicting Mediterranean fruit fly outbreak risk across two regions — the Western Cape (South Africa) and California — each calibrated to local climate, trap-catch, and crop-cycle data.
-- Feature sets included cumulative degree-days, rainfall spikes, historical trap counts, host-crop harvest schedules, and proximity to known infestation hot spots (Western Cape), plus microclimate and quarantine-boundary features (California).
-- Sourced and negotiated data access with international research bodies and industry contacts.
+- Features built so far: cumulative degree-days, lagged trap counts and rolling weather windows; the Western Cape model was also built as a regressor and validated walk-forward, with simpler models (Random Forest, Ridge) reported alongside XGBoost.
+- In progress: rainfall-spike, host-crop harvest-schedule and infestation-proximity features (Western Cape), and microclimate and quarantine-boundary features (California).
+- Trap-count data obtained through an industry contact; further data-access arrangements in progress.
 - Code: [github.com/DeanMeiring/Dean-Projects](https://github.com/DeanMeiring/Dean-Projects)
 
 ## Technical Skills
@@ -51,7 +58,7 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 
 ## Experience
 
-### Application Specialist (AIT Intern) | Online Intelligence
+### Application Specialist | Online Intelligence
 *Jan 2026 – Present*
 
 - Write SQL queries and automation scripts that replace manual data handling on the CiiMS platform for Thompsons Security Group, with support for Clicks and EBS Security.
@@ -93,7 +100,7 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 ## Leadership & Extracurricular
 
 - **Esports Tournament Organiser, Belgium Campus** — Structure and run inter-university tournaments (Rocket League, Valorant, EA FC) across South African campuses, including bracket design, sponsorship strategy, and player analytics.
-- **Youth Ministry Leader, Shofar Stellenbosch** (Jan 2024 – Present) — Lead a youth group; developed structured communication and mentorship skills.
+- **Youth Ministry Leader, Shofar Stellenbosch** (Jan 2024 – Jan 2026; still serve every second Friday) — Lead a youth group; developed structured communication and mentorship skills.
 - **Tanzania Mission Trip Co-Leader** (June 2024) — Coordinated a two-week international outreach team.
 
 ## Achievements & Interests

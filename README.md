@@ -23,6 +23,12 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 - Hash-verified SQLite feature library, and Claude tested as a reader of the vocabulary (78.6%, answers grounded in word cards); its answers came from the cards, so a custom reader was parked.
 - Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
 
+### Offline Document Q&A System — Project Outline (private repository)
+
+- Building a fully local question-answering system over PDF manuals. The retrieval pipeline is built: PDF parsing into sections that keep printed-page citations, local embeddings (768 numbers per section) in a vector database, a custom BM25 keyword search, and reciprocal rank fusion to merge the two result lists.
+- Designed for privacy: everything runs on one machine with no cloud APIs, and network code is limited to localhost, enforced by automated tests.
+- Built a test harness to compare search settings before changing them. Answer generation with a local LLM is in progress.
+
 ### Real-Time Crypto Arbitrage & ML Price-Prediction Platform
 - Live trading-signal system combining triangular and cross-exchange arbitrage detection (Binance and Crypto.com APIs, WebSocket + REST) with per-asset XGBoost classifiers predicting short-term price direction, retrained daily on a rolling window of live market data.
 - Iterating on an XGBoost price-direction model across 8 assets (130K+ candles each); investigating alternative feature sets and prediction horizons after a chance-level baseline.
@@ -30,10 +36,11 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 - Telegram bot for real-time alerts and command-driven reporting, plus a live analytics dashboard (FastAPI, PostgreSQL, Chart.js).
 - Deployed and continuously operated on Railway, including scheduled retraining, schema migrations, and safe redeploys of a stateful, always-on service.
 
-### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline
+### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline (Research in Progress)
 - XGBoost classifiers predicting Mediterranean fruit fly outbreak risk across the Western Cape (South Africa) and California, each calibrated to local climate, trap-catch, and crop-cycle data.
-- Feature sets: cumulative degree-days, rainfall spikes, historical trap counts, host-crop harvest schedules, microclimate and quarantine-boundary features.
-- Sourced and negotiated data access with international research bodies and industry contacts.
+- Features built so far: cumulative degree-days, lagged trap counts and rolling weather windows; the Western Cape model was also built as a regressor and validated walk-forward, with simpler models (Random Forest, Ridge) reported alongside XGBoost.
+- In progress: rainfall-spike, host-crop harvest-schedule and infestation-proximity features (Western Cape), and microclimate and quarantine-boundary features (California).
+- Trap-count data obtained through an industry contact; further data-access arrangements in progress.
 - Code: [github.com/DeanMeiring/Dean-Projects](https://github.com/DeanMeiring/Dean-Projects)
 
 ## Technical Skills
@@ -48,7 +55,7 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 
 ## Experience
 
-- **Application Specialist (AIT Intern)**, Online Intelligence — *Jan 2026 – Present*
+- **Application Specialist**, Online Intelligence — *Jan 2026 – Present*
 - **Co-Founder & Data Analyst**, MEIDEAN Trading (Family Business) — *Mar 2025 – Dec 2025*
 - **Founder & Software Developer**, LPSolutions — *Oct 2023 – Dec 2024*
 - **Software Engineering Intern (Job Shadowing)**, Pragma — *Dec 2024*
@@ -65,7 +72,7 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 ## Leadership & Extracurricular
 
 - Esports Tournament Organiser, Belgium Campus
-- Youth Ministry Leader, Shofar Stellenbosch (Jan 2024 – Present)
+- Youth Ministry Leader, Shofar Stellenbosch (Jan 2024 – Jan 2026; still serve every second Friday)
 - Tanzania Mission Trip Co-Leader (June 2024)
 
 ## Achievements & Interests
