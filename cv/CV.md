@@ -23,6 +23,12 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 - Found that retraining on a second machine gives a slightly different dictionary (60.2% vs 61.3% at 50 labels), so a dictionary is only reusable as a copied, hashed file. Working under a self-imposed 30% compute cap on CPU-only laptops.
 - Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
 
+### Offline Document Q&A System — Project Outline (private repository)
+
+- Building a fully local question-answering system over PDF manuals. The retrieval pipeline is built: PDF parsing into sections that keep printed-page citations, local embeddings (768 numbers per section) in a vector database, a custom BM25 keyword search, and reciprocal rank fusion to merge the two result lists.
+- Designed for privacy: everything runs on one machine with no cloud APIs, and network code is limited to localhost, enforced by automated tests.
+- Built a test harness to compare search settings before changing them. Answer generation with a local LLM is in progress.
+
 ### Real-Time Crypto Arbitrage & ML Price-Prediction Platform
 
 - Designed and deployed a live trading-signal system combining triangular and cross-exchange arbitrage detection (Binance and Crypto.com APIs, WebSocket + REST) with per-asset XGBoost classifiers predicting short-term price direction, retrained daily on a rolling window of live market data.

@@ -23,6 +23,12 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 - Hash-verified SQLite feature library, and Claude tested as a reader of the vocabulary (78.6%, answers grounded in word cards); its answers came from the cards, so a custom reader was parked.
 - Code: [github.com/DeanMeiring/features-abstractions-meaning](https://github.com/DeanMeiring/features-abstractions-meaning)
 
+### Offline Document Q&A System — Project Outline (private repository)
+
+- Building a fully local question-answering system over PDF manuals. The retrieval pipeline is built: PDF parsing into sections that keep printed-page citations, local embeddings (768 numbers per section) in a vector database, a custom BM25 keyword search, and reciprocal rank fusion to merge the two result lists.
+- Designed for privacy: everything runs on one machine with no cloud APIs, and network code is limited to localhost, enforced by automated tests.
+- Built a test harness to compare search settings before changing them. Answer generation with a local LLM is in progress.
+
 ### Real-Time Crypto Arbitrage & ML Price-Prediction Platform
 - Live trading-signal system combining triangular and cross-exchange arbitrage detection (Binance and Crypto.com APIs, WebSocket + REST) with per-asset XGBoost classifiers predicting short-term price direction, retrained daily on a rolling window of live market data.
 - Iterating on an XGBoost price-direction model across 8 assets (130K+ candles each); investigating alternative feature sets and prediction horizons after a chance-level baseline.
