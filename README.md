@@ -36,9 +36,11 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 - Telegram bot for real-time alerts and command-driven reporting, plus a live analytics dashboard (FastAPI, PostgreSQL, Chart.js).
 - Deployed and continuously operated on Railway, including scheduled retraining, schema migrations, and safe redeploys of a stateful, always-on service.
 
-### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline
+### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline (Research in Progress)
 - XGBoost classifiers predicting Mediterranean fruit fly outbreak risk across the Western Cape (South Africa) and California, each calibrated to local climate, trap-catch, and crop-cycle data.
-- Features: cumulative degree-days, lagged trap counts and rolling weather windows; the Western Cape model was also built as a regressor and validated walk-forward, with simpler models (Random Forest, Ridge) reported alongside XGBoost.
+- Features built so far: cumulative degree-days, lagged trap counts and rolling weather windows; the Western Cape model was also built as a regressor and validated walk-forward, with simpler models (Random Forest, Ridge) reported alongside XGBoost.
+- In progress: rainfall-spike, host-crop harvest-schedule and infestation-proximity features (Western Cape), and microclimate and quarantine-boundary features (California).
+- Trap-count data obtained through an industry contact; further data-access arrangements in progress.
 - Code: [github.com/DeanMeiring/Dean-Projects](https://github.com/DeanMeiring/Dean-Projects)
 
 ## Technical Skills
