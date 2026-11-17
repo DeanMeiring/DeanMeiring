@@ -32,8 +32,7 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 
 ### Mediterranean Fruit Fly Outbreak Prediction — Multi-Region ML Pipeline
 - XGBoost classifiers predicting Mediterranean fruit fly outbreak risk across the Western Cape (South Africa) and California, each calibrated to local climate, trap-catch, and crop-cycle data.
-- Feature sets: cumulative degree-days, rainfall spikes, historical trap counts, host-crop harvest schedules, microclimate and quarantine-boundary features.
-- Sourced and negotiated data access with international research bodies and industry contacts.
+- Features: cumulative degree-days, lagged trap counts and rolling weather windows; the Western Cape model was also built as a regressor and validated walk-forward, with simpler models (Random Forest, Ridge) reported alongside XGBoost.
 - Code: [github.com/DeanMeiring/Dean-Projects](https://github.com/DeanMeiring/Dean-Projects)
 
 ## Technical Skills
@@ -48,7 +47,7 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 
 ## Experience
 
-- **Application Specialist (AIT Intern)**, Online Intelligence — *Jan 2026 – Present*
+- **Application Specialist**, Online Intelligence — *Jan 2026 – Present*
 - **Co-Founder & Data Analyst**, MEIDEAN Trading (Family Business) — *Mar 2025 – Dec 2025*
 - **Founder & Software Developer**, LPSolutions — *Oct 2023 – Dec 2024*
 - **Software Engineering Intern (Job Shadowing)**, Pragma — *Dec 2024*
@@ -65,7 +64,7 @@ Final-year Bachelor of Computing student (Data Science, 65.6% weighted average) 
 ## Leadership & Extracurricular
 
 - Esports Tournament Organiser, Belgium Campus
-- Youth Ministry Leader, Shofar Stellenbosch (Jan 2024 – Present)
+- Youth Ministry Leader, Shofar Stellenbosch (Jan 2024 – Jan 2026; still serve every second Friday)
 - Tanzania Mission Trip Co-Leader (June 2024)
 
 ## Achievements & Interests
